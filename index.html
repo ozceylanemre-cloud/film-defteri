@@ -15,13 +15,17 @@
 <header class="top">
   <div class="wrap topin">
     <a href="#/" class="logo">Film <span>Defteri</span></a>
-    <nav aria-label="Ana menü">
-      <a href="#/" data-r="defter">Defter</a>
-      <a href="#/istatistik" data-r="istatistik">İstatistik</a>
-      <a href="#/yeni" data-r="yeni" class="navbtn">+ Yeni</a>
+    <div class="topright">
+      <a href="#/yeni" class="navbtn">+ Değerlendir</a>
       <span id="authbox" class="authbox"></span>
-    </nav>
+    </div>
   </div>
+  <nav class="wrap tabs" aria-label="Ana menü">
+    <a href="#/" data-r="defter">Defter</a>
+    <a href="#/siradaki" data-r="siradaki">Sıradaki</a>
+    <a href="#/kisiler" data-r="kisiler">Kişiler</a>
+    <a href="#/istatistik" data-r="istatistik">İstatistik</a>
+  </nav>
 </header>
 
 <div class="demo" id="demo" hidden><div class="wrap">Deneme modu: değerlendirmeler yalnızca bu tarayıcıda saklanıyor. Ortak defter için Firebase kurulumunu tamamla (BENIOKU.md).</div></div>
@@ -29,6 +33,7 @@
 
 <footer class="wrap foot">
   <p>Film Defteri · Herkesin okuyabildiği ortak film değerlendirme defteri. Yazmak için Google hesabınla giriş yap.</p>
+  <p id="tmdbnote" hidden>Film bilgileri ve afişler TMDB'den gelir. Bu site TMDB API'sini kullanır ancak TMDB tarafından onaylanmamıştır.</p>
 </footer>
 
 <div class="toast" id="toast" role="status" hidden></div>
